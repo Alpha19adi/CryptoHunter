@@ -40,9 +40,9 @@ function Header() {
 
   return (
     <div className="header">
-      <h1>
-        CryptoHunter<span style={{ color: "var(--blue)" }}>.</span>
-      </h1>
+      <a href="/"><h1>
+        CryptoHunter
+      </h1></a>
       <div className="links">
         <Switch checked={darkMode} onClick={() => changeMode()} />
         <a href="/">

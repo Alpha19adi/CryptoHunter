@@ -26,7 +26,7 @@ function MainComponent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.75, duration: 1 }}
         >
-          Real Time.
+          Real Time
         </motion.h1>
         <motion.p
           className="info-text"
