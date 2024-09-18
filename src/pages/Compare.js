@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Info from "../components/CoinPage/Info";
 import LineChart from "../components/CoinPage/LineChart";
 import ToggleComponents from "../components/CoinPage/ToggleComponent";
 import Header from "../components/Common/Header";
@@ -15,13 +14,10 @@ import { settingCoinObject } from "../functions/settingCoinObject";
 function Compare() {
   const [allCoins, setAllCoins] = useState([]);
   const [loading, setLoading] = useState(false);
-  // id states
   const [crypto1, setCrypto1] = useState("bitcoin");
   const [crypto2, setCrypto2] = useState("ethereum");
-  // data states
   const [coin1Data, setCoin1Data] = useState({});
   const [coin2Data, setCoin2Data] = useState({});
-  // days state
   const [days, setDays] = useState(30);
   const [priceType, setPriceType] = useState("prices");
   const [chartData, setChartData] = useState({

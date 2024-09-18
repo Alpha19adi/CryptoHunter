@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Info from "../components/CoinPage/Info";
 import LineChart from "../components/CoinPage/LineChart";
 import SelectDays from "../components/CoinPage/SelectDays";
 import ToggleComponents from "../components/CoinPage/ToggleComponent";
@@ -78,7 +77,6 @@ function Coin() {
             />
             <LineChart chartData={chartData} />
           </div>
-          <Info title={coin.name} desc={coin.desc} />
         </>
       ) : error ? (
         <div>
